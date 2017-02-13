@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/alexking</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">qw759123</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
+        <property name="show_sql">true</property>
+
+        <mapping resource="ru/alexking/models/Role.hbm.xml"/>
+        <mapping resource="ru/alexking/models/PetType.hbm.xml"/>
+        <mapping resource="ru/alexking/models/User.hbm.xml"/>
+        <mapping resource="ru/alexking/models/Pet.hbm.xml"/>
+        <mapping resource="ru/alexking/models/Message.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
